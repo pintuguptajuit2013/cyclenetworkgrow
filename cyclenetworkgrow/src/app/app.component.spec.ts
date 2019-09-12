@@ -23,13 +23,13 @@ describe('AppComponent', () => {
   it(`should have as title 'cyclenetworkgrow'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('cyclenetworkgrow');
+    expect(app.title).toEqual('cyclenetworkgrow1');
   });
 
-  it('should render title in a h1 tag', () => {
+  it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to cyclenetworkgrow!');
+    expect(compiled.querySelector('.content span').textContent).toContain('cyclenetworkgrow app is running!');
   });
 });

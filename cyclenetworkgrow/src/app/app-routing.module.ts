@@ -3,7 +3,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LeadershipComponent } from './leadership/leadership.component';
 import { ListCyclistComponent } from './list-cyclist/list-cyclist.component';
-import { BlockingProxy } from 'blocking-proxy';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { BlogComponent } from './blog/blog.component';
@@ -27,9 +26,9 @@ const routes: Routes = [
   { path: 'register', component: RegistrationComponent },
   { path: 'login', component: LoginComponent },
   { path: 'admin', component: AdminComponent },
-   { path: 'logout', component: LogoutComponent },
-
-  { path: '', component:DashboardComponent }
+  { path: 'logout', component: LogoutComponent },
+  { path: 'dashboard', component: DashboardComponent},
+  { path: '', component:AppComponent }
   
 ];
 
